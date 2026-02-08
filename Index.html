@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Healing & Support | Professional Guidance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Your Specified Palette */
+            --primary-navy: #1F2A44;
+            --accent-mustard: #D4A017;
+            --accent-mustard-hover: #B8860B;
+            --soft-grey-bg: #E5E7EB;
+            --soft-grey-text: #6B7280;
+            --sage-accent: #A3B18A;
+            --off-white-bg: #F7F9FB;
+            --white: #FFFFFF;
+            --text-charcoal: #1F2937;
+            
+            /* Layout Specs */
+            --max-width: 1100px;
+            --section-padding: 80px;
+            --radius: 8px;
+            --shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+        }
+
+        * { box-sizing: border-box; }
+        
+        body { 
+            margin: 0; 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6; 
+            color: var(--text-charcoal); 
+            background-color: var(--off-white-bg);
+            font-size: 18px; /* Your specified body size */
+        }
+
+        h1, h2, h3 { 
+            font-family: 'Playfair Display', serif; 
+            color: var(--primary-navy); 
+            margin-top: 0;
+        }
+
+        h1 { font-size: 44px; line-height: 1.2; }
+        h2 { font-size: 32px; }
+        h3 { font-size: 22px; }
+
+        /* Navigation */
+        nav {
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow);
+            z-index: 1000;
+        }
+        nav .logo { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.4rem; color: var(--primary-navy); }
+        nav a { text-decoration: none; color: var(--text-charcoal); margin-left: 25px; font-weight: 600; font-size: 16px; transition: 0.3s; }
+        nav a:hover { color: var(--accent-mustard); }
+
+        /* Hero Section */
+        .hero { 
+            background-color: var(--white);
+            text-align: center; 
+            padding: 120px 10%;
+            border-bottom: 1px solid var(--soft-grey-bg);
+        }
+        .hero p { color: var(--soft-grey-text); max-width: 800px; margin: 0 auto 2.5rem; font-size: 20px; }
+
+        /* Section Container */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+        }
+
+        section { padding: var(--section-padding) 5%; }
+        .bg-alt { background-color: var(--soft-grey-bg); }
+        .bg-white { background-color: var(--white); }
+
+        /* Buttons */
+        .btn-primary {
+            background-color: var(--accent-mustard);
+            color: var(--white);
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: var(--radius);
+            display: inline-block;
+            font-weight: 600;
+            transition: background 0.3s;
+            border: none;
+        }
+        .btn-primary:hover { background-color: var(--accent-mustard-hover); }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--primary-navy);
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: var(--radius);
+            display: inline-block;
+            font-weight: 600;
+            border: 2px solid var(--primary-navy);
+            transition: 0.3s;
+            margin-left: 10px;
+        }
+        .btn-secondary:hover { background-color: var(--primary-navy); color: var(--white); }
+
+        /* Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* Form Styling */
+        form { max-width: 600px; margin: 40px auto; }
+        input, textarea {
+            width: 100%;
+            padding: 14px;
+            margin: 10px 0;
+            border: 1px solid var(--soft-grey-bg);
+            border-radius: var(--radius);
+            font-family: 'Inter', sans-serif;
+        }
+        
+        footer {
+            background: var(--primary-navy);
+            color: var(--white);
+            padding: 60px 10%;
+            text-align: center;
+        }
+        .crisis-note { font-size: 14px; opacity: 0.7; max-width: 700px; margin: 20px auto; line-height: 1.4; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .btn-secondary { margin-left: 0; margin-top: 10px; width: 100%; text-align: center; }
+            .btn-primary { width: 100%; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Support & Healing</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>A space to slow down, understand yourself, and begin healing.</h1>
+            <p>Compassionate, empowerment-based emotional support for people navigating anxiety, overwhelm, and life’s transitions.</p>
+            <a href="#contact" class="btn-primary">Book a Session</a>
+            <a href="#about" class="btn-secondary">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white">
+        <div class="container">
+            <h2>About My Work</h2>
+            <p>I offer empowerment-based emotional healing support for individuals who want to better understand themselves and create healthier ways of relating to their emotions and relationships.</p>
+            <p>I am currently pursuing an MSc in Psychology, and my work integrates psychological insight with holistic, healing-oriented perspectives. Rather than focusing on “fixing” you, our work centers on helping you build awareness, emotional safety, and a stronger connection with your inner resources.</p>
+            
+            <h3 style="margin-top: 40px;">My Approach Is:</h3>
+            <div class="grid">
+                <div class="card" style="border-top: 4px solid var(--sage-accent);">
+                    <p><strong>Trauma-aware</strong> and emotionally attuned to your specific needs.</p>
+                </div>
+                <div class="card" style="border-top: 4px solid var(--sage-accent);">
+                    <p><strong>Empowerment-focused</strong>, keeping you in the driver’s seat of your healing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-alt">
+        <div class="container">
+            <h2>1:1 Emotional Healing Sessions</h2>
+            <p>These one-on-one sessions offer a supportive space to explore what you are going through and develop tools for emotional well-being.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>The Focus</h3>
+                    <p>Anxiety, stress, life transitions, and relationship challenges. We work on building regulation skills and nervous system balance.</p>
+                </div>
+                <div class="card">
+                    <h3>The Format</h3>
+                    <p><strong>Location:</strong> Online / In-person<br>
+                    <strong>Length:</strong> 60 Minutes<br>
+                    <strong>Investment:</strong> (Add your fees here)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white">
+        <div class="container">
+            <h2 style="text-align: center;">Get in Touch</h2>
+            <p style="text-align: center; color: var(--soft-grey-text);">If you have questions or would like to book a session, reach out below.</p>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea rows="5" placeholder="What brings you here?"></textarea>
+                <button type="submit" class="btn-primary" style="width: 100%; cursor: pointer;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Emotional Healing Support</p>
+        <p class="crisis-note">This service offers emotional support and personal growth work and is not a substitute for medical or psychiatric treatment. If you are in crisis or need urgent mental health care, please contact a local emergency service or mental health professional.</p>
+    </footer>
+
+</body>
+</html>
